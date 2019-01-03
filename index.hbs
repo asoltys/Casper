@@ -2,34 +2,23 @@
 {{!-- The tag above means: insert everything in this file
 into the {body} of the default.hbs template --}}
 
-{{> header background=@blog.cover_image}} {{!--Special header.hbs partial to generate the <header> tag--}}
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                {{#if @blog.logo}}
-                    <img class="site-logo" src="{{img_url @blog.logo size="s"}}" alt="{{@blog.title}}" />
-                {{else}}
-                    {{@blog.title}}
-                {{/if}}
-            </h1>
-            <h2 class="site-description">{{@blog.description}}</h2>
-        </div>
-        {{> "site-nav"}}
+<div class="bg-yellow">
+  <div class="d-flex flex-wrap flex-lg-nowrap container">
+    <div class="mt-sm-4 mt-lg-auto w-100 mb-sm-2 text-center text-lg-left">
+      <div class="section"></div>
+      <h1>Althea Blog</h1>
     </div>
-</header>
+  </div>
+</div>
 
-{{!-- The main content area --}}
-<main id="site-main" class="site-main outer">
-    <div class="inner">
 
-        <div class="post-feed">
-            {{#foreach posts}}
-
-                {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
-                {{> "post-card"}}
-
-            {{/foreach}}
-        </div>
-
-    </div>
-</main>
+<div class="container section top-section">
+  <div class="d-flex flex-wrap row posts">
+    {{#foreach posts}}
+        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+        {{> "post-card"}}
+    {{/foreach}}
+  </div>
+  <hr class="light-yellow" />
+  <div class="text-center w-100"><a id="load-more" class="btn btn-primary" href="#">Load More</a></div>
+</div>

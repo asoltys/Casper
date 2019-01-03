@@ -7,9 +7,9 @@
     <div class="mt-md-4 w-100 mb-md-2 text-center">
       <p class="tiny-caption">
         {{#primary_author}}
-          <a href="{{url}}">{{name}}</a>
-        {{/primary_author}}
-        <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
+          <a href="{{url}}" style="text-decoration: none; border: none;">{{name}}</a>
+        {{/primary_author}} |
+        <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time>
       </p>
       <h2>{{title}}</h2>
       {{#if feature_image}}
