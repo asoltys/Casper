@@ -4,6 +4,7 @@
       <div style="background-image: url({{img_url feature_image size='xl'}})" class="image"></div>
     {{/if}}
 
+    <div style="max-width: 480px">
     <p class="post-meta caption mt-2 mb-1">
       {{#foreach authors}}
         {{name}} | <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time>
@@ -14,6 +15,7 @@
     <p class="post-summary">
       {{excerpt words="33"}}
     </p>
-    <p><a href="{{url}}" class="forward-link post-link">Learn More <i class="align-middle material-icons">arrow_forward</i></a></p>
+    <p><a href="{{url}}" class="forward-link post-link">Read More <i class="align-middle material-icons">arrow_forward</i></a></p>
+    </div>
   </div>
 </a>
