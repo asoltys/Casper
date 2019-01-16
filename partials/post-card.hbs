@@ -7,8 +7,9 @@
     <div style="max-width: 480px">
     <p class="post-meta caption mt-2 mb-1">
       {{#foreach authors}}
-        {{name}} | <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time>
+        {{name}} | 
       {{/foreach}}
+      <time class="post-full-meta-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="DD.MM.YYYY"}}</time>
     </p>
     
     <h2 class="mt-0">{{title}}</h2>
