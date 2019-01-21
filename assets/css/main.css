@@ -6093,3 +6093,7 @@ hr.light-yellow {
     color: #7d4b62; }
   .paper hr {
     border: 2px solid black; }
+
+.blog-post img {
+  max-width: 100%;
+} 
