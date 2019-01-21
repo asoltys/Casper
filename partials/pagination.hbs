@@ -1,0 +1,18 @@
+<hr />
+<nav class="pagination" role="navigation">
+  <div class="d-flex justify-content-around w-100">
+    <div>
+    {{#if prev}}
+        <a class="btn btn-primary newer-posts" href="{{page_url prev}}">Previous Page</a>
+    {{/if}}
+    </div>
+    <h3 class="page-number">Page {{page}} of {{pages}}</h3>
+    <div>
+    {{#if next}}
+    <a class="btn btn-primary older-posts" href="{{page_url next}}">
+      Next Page
+    </a>
+    {{/if}}
+    </div>
+  </div>
+</nav>
